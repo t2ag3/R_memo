@@ -1,0 +1,36 @@
+---
+title: "theme_paper"
+author: "Ken Takasawa"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{theme_paper}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mytheme)
+library(tidyverse)
+```
+
+# Demonstration for usage
+## Plot without mytheme::theme_paper()
+```{r}
+iris %>% ggplot(aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point()
+```
+
+## Plot with mytheme::theme_paper()
+```{r}
+iris %>% ggplot(aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point() +
+  theme_paper()
+```
+
