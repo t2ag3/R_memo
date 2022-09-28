@@ -17,7 +17,7 @@ g <- iris %>%
   geom_point()
 g + theme_paper()
 ```
-[https://user-images.githubusercontent.com/7193590/192661187-c1fe1a8d-122f-49b6-a9ea-a2e109e11259.jpeg]
+![plot](https://user-images.githubusercontent.com/7193590/192661187-c1fe1a8d-122f-49b6-a9ea-a2e109e11259.jpeg)
 
 ```R
 # show vignette page
