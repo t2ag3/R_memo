@@ -1,6 +1,6 @@
 # Rのメモ
 
-1. ggplot2
+1. ggplot2関連のメモ
 2. 論文用ggplot2テーマ自作パッケージ: [mytheme](https://github.com/t2ag3/R_memo/tree/main/mytheme)
 
 # mytheme
