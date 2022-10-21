@@ -1,4 +1,4 @@
-# legendを操作
+# legend関連
 - `palmerpenguins`のデータで例示
 - `theme()`の`legend.position`と`legend.justification`で指定
 - 段組みは`guides()`の`color`か`fill`attributeに対して、`guide_legend()`で指定
@@ -40,6 +40,20 @@ p1 + guides(color = guide_legend(ncol = 2))
 p1 + theme(legend.direction = 'horizontal')
 ```
 <img src="https://user-images.githubusercontent.com/7193590/194458998-44a51974-84ec-4b36-bdac-d94e2c83eb3e.png" width="50%" />
+
+## legendの表示名を変える
+```R
+p1 + scale_color_discrete(labels = c('アデリー', 'アゴヒゲ', 'ジェンツー'))
+```
+![ba902fef-aca6-44f3-bf6d-a8c6ec7447f7](https://user-images.githubusercontent.com/7193590/197204222-d967ee4c-994e-4d17-a148-cd31f30a2901.png)
+
+# 配色関連
+## 配色を逆順にする
+```R
+p1 + scale_color_hue(direction = -1)
+```
+![a8096c75-bdef-4396-be19-1e9e0bee4a35](https://user-images.githubusercontent.com/7193590/197204965-ccd7dfa4-e049-41e0-beff-3513526ea943.png)
+
 
 # 軸とかのラベルを変える
 ```R
