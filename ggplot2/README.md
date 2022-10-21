@@ -45,14 +45,14 @@ p1 + theme(legend.direction = 'horizontal')
 ```R
 p1 + scale_color_discrete(labels = c('アデリー', 'アゴヒゲ', 'ジェンツー'))
 ```
-![ba902fef-aca6-44f3-bf6d-a8c6ec7447f7](https://user-images.githubusercontent.com/7193590/197204222-d967ee4c-994e-4d17-a148-cd31f30a2901.png)
+<img src="https://user-images.githubusercontent.com/7193590/197204222-d967ee4c-994e-4d17-a148-cd31f30a2901.png" width="50%" />
 
 # 配色関連
 ## 配色を逆順にする
 ```R
 p1 + scale_color_hue(direction = -1)
 ```
-![a8096c75-bdef-4396-be19-1e9e0bee4a35](https://user-images.githubusercontent.com/7193590/197204965-ccd7dfa4-e049-41e0-beff-3513526ea943.png)
+<img src="https://user-images.githubusercontent.com/7193590/197204965-ccd7dfa4-e049-41e0-beff-3513526ea943.png" width="50%" />
 
 
 # 軸とかのラベルを変える
