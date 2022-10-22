@@ -81,7 +81,7 @@ p.bar <- penguins %>% filter(!is.na(sex)) %>%
 ```
 <img src="https://user-images.githubusercontent.com/7193590/194460854-5c31c75e-1563-4085-b5e7-453901d8bf8a.png" width="50%" />
 
-## x軸から浮かないようにする
+## x軸からy軸が浮かないようにする
 ```R
 p.bar + scale_y_continuous(expand = c(0, 0)) -> p.bar1
 ```
@@ -96,4 +96,23 @@ p.bar1 +
                  width = 0.2)
 ```
 <img src="https://user-images.githubusercontent.com/7193590/194460857-b0ce92dd-e736-45cc-9199-775a8721b4b9.png" width="50%" />
+
+# 保存関連
+- single column size: `width`: 3.5 inch
+- 1.5 column size: `width`: 5 inch
+- double column size: `width`: 7.2 inch
+- `units`: `in`(default), `cm`, `mm`, `px`
+
+```R
+width <- 3.5
+height <- 4
+dpi <- 600
+device <- 'eps'
+ggsave('filename.eps', 
+       plot = p1, 
+       width = width, 
+       height = height,
+       dpi = dpi,
+       device = device)
+```
 

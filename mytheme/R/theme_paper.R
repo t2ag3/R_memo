@@ -20,7 +20,7 @@
 
 theme_paper <- function(){
   theme(line = element_line(colour = 'black', lineend = 'square'),
-        text = element_text(color = 'black', size = 12),
+        text = element_text(color = 'black', size = 10),
         panel.background = element_blank(),
         plot.background = element_blank(),
         strip.background = element_blank(),
@@ -30,5 +30,6 @@ theme_paper <- function(){
         axis.line = element_line(color = 'black', lineend = 'square'),
         axis.text = element_text(color = 'black', size = 9),
         panel.grid = element_blank(),
+        axis.ticks = element_line(color = 'black'),
         complete = TRUE)
 }
