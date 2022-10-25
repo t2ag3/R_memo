@@ -38,11 +38,12 @@ theme_paper <- function(){
 #' No background panel.
 #' No grid of plot area.
 #' The color of all texts are "black".
+#' @import ggplot2 scale_y_continuous
 #' @export
 #' @examples
 #' theme_paper_bar()
 theme_paper_bar <- function(){
   theme_paper() +
-    scale_y_continuous(expand = c(0, 0))
+    ggplot2::scale_y_continuous(expand = c(0, 0))
 }
 
