@@ -38,6 +38,7 @@ theme_paper <- function(){
 #' No background panel.
 #' No grid of plot area.
 #' The color of all texts are "black".
+#' @rdname theme_paper
 #' @import ggplot2 scale_y_continuous
 #' @export
 #' @examples
