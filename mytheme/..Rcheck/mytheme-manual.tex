@@ -1,0 +1,61 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `mytheme'}}
+\par\bigskip{\large \today}
+\end{center}
+\inputencoding{utf8}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {mytheme: Theme of ggplot for scientific paper usage}}}{}
+\begin{description}
+\raggedright{}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{Theme of ggplot for scientific paper usage}
+\item[Version]\AsIs{0.1.0}
+\item[Author]\AsIs{Ken Takasawa}
+\item[Maintainer]\AsIs{Ken Takasawa}\email{ken.myz.vet@gmail.com}\AsIs{}
+\item[Description]\AsIs{Theme of ggplot for scientific paper usage. No background panel, the color of all texts are black.}
+\item[License]\AsIs{GPL (>= 3)}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[RoxygenNote]\AsIs{7.2.1}
+\item[Imports]\AsIs{ggplot2}
+\item[Suggests]\AsIs{knitr, rmarkdown, testthat (>= 3.0.0)}
+\item[Config/testthat/edition]\AsIs{3}
+\item[Roxygen]\AsIs{list(markdown = TRUE)}
+\item[VignetteBuilder]\AsIs{knitr}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{theme\_paper}{Theme of ggplot2 for scientific paper usage}{theme.Rul.paper}
+%
+\begin{Description}\relax
+Theme of ggplot2 for scientific paper usage.
+No background panel.
+No grid of plot area.
+The color of all texts are "black".
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+theme_paper()
+\end{verbatim}
+\end{Usage}
+%
+\begin{Author}\relax
+Ken Takasawa
+\end{Author}
+%
+\begin{Examples}
+\begin{ExampleCode}
+theme_paper()
+\end{ExampleCode}
+\end{Examples}
+\printindex{}
+\end{document}

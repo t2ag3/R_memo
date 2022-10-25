@@ -1,10 +1,6 @@
 #' @name theme_paper
 #' @aliases theme_paper
 #' @title Theme of ggplot2 for scientific paper usage
-#' @description Theme of ggplot2 for scientific paper usage.
-#' No background panel.
-#' No grid of plot area.
-#' The color of all texts are "black".
 #'
 #' @author Ken Takasawa
 #'
@@ -14,10 +10,13 @@
 #'    element_text
 #'    element_blank
 #'
+#' @description Theme of ggplot2 for scientific paper usage.
+#' No background panel.
+#' No grid of plot area.
+#' The color of all texts are "black".
 #' @export
 #' @examples
 #' theme_paper()
-
 theme_paper <- function(){
   theme(line = element_line(colour = 'black', lineend = 'square'),
         text = element_text(color = 'black', size = 10),
@@ -39,17 +38,9 @@ theme_paper <- function(){
 #' No background panel.
 #' No grid of plot area.
 #' The color of all texts are "black".
-#'
-#' @importFrom ggplot2
-#'    theme
-#'    element_line
-#'    element_text
-#'    element_blank
-#'
 #' @export
 #' @examples
 #' theme_paper_bar()
-
 theme_paper_bar <- function(){
   theme_paper() +
     scale_y_continuous(expand = c(0, 0))

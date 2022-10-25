@@ -1,0 +1,125 @@
+
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "mytheme"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('mytheme')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("theme_paper")
+> ### * theme_paper
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: theme_paper
+> ### Title: Theme of ggplot2 for scientific paper usage
+> ### Aliases: theme_paper
+> 
+> ### ** Examples
+> 
+> theme_paper()
+List of 12
+ $ line                 :List of 6
+  ..$ colour       : chr "black"
+  ..$ size         : NULL
+  ..$ linetype     : NULL
+  ..$ lineend      : chr "square"
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, "class")= chr [1:2] "element_line" "element"
+ $ text                 :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : chr "black"
+  ..$ size         : num 10
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, "class")= chr [1:2] "element_text" "element"
+ $ axis.text            :List of 11
+  ..$ family       : NULL
+  ..$ face         : NULL
+  ..$ colour       : chr "black"
+  ..$ size         : num 9
+  ..$ hjust        : NULL
+  ..$ vjust        : NULL
+  ..$ angle        : NULL
+  ..$ lineheight   : NULL
+  ..$ margin       : NULL
+  ..$ debug        : NULL
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, "class")= chr [1:2] "element_text" "element"
+ $ axis.ticks           :List of 6
+  ..$ colour       : chr "black"
+  ..$ size         : NULL
+  ..$ linetype     : NULL
+  ..$ lineend      : NULL
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, "class")= chr [1:2] "element_line" "element"
+ $ axis.line            :List of 6
+  ..$ colour       : chr "black"
+  ..$ size         : NULL
+  ..$ linetype     : NULL
+  ..$ lineend      : chr "square"
+  ..$ arrow        : logi FALSE
+  ..$ inherit.blank: logi TRUE
+  ..- attr(*, "class")= chr [1:2] "element_line" "element"
+ $ legend.background    : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ legend.key           : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ legend.box.background: list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ panel.background     : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ panel.grid           : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ plot.background      : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ $ strip.background     : list()
+  ..- attr(*, "class")= chr [1:2] "element_blank" "element"
+ - attr(*, "class")= chr [1:2] "theme" "gg"
+ - attr(*, "complete")= logi TRUE
+ - attr(*, "validate")= logi TRUE
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.58 0.038 0.684 0.001 0.003 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
