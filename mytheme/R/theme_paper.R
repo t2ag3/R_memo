@@ -2,6 +2,11 @@
 #' @aliases theme_paper
 #' @title Theme of ggplot2 for scientific paper usage
 #'
+#' @description Theme of ggplot2 for scientific paper usage.
+#' No background panel.
+#' No grid of plot area.
+#' The color of all texts are "black".
+#'
 #' @author Ken Takasawa
 #'
 #' @importFrom ggplot2
@@ -10,10 +15,7 @@
 #'    element_text
 #'    element_blank
 #'
-#' @description Theme of ggplot2 for scientific paper usage.
-#' No background panel.
-#' No grid of plot area.
-#' The color of all texts are "black".
+#' @inheritParams theme_paper
 #' @export
 #' @examples
 #' theme_paper()
@@ -34,11 +36,13 @@ theme_paper <- function(){
 }
 
 
-#' @description Theme of ggplot2 barplot for scientific paper usage.
+#' Theme of ggplot2 barplot for scientific paper usage.
+#'
+#' Theme of ggplot2 barplot for scientific paper usage.
 #' No background panel.
 #' No grid of plot area.
 #' The color of all texts are "black".
-#' @rdname theme_paper
+#'
 #' @import ggplot2 scale_y_continuous
 #' @export
 #' @examples
