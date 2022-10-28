@@ -54,6 +54,13 @@ p1 + scale_color_hue(direction = -1)
 ```
 <img src="https://user-images.githubusercontent.com/7193590/197204965-ccd7dfa4-e049-41e0-beff-3513526ea943.png" width="50%" />
 
+## カラーパレットを見る
+```R
+# 最初の6桁がカラーコード, 最後の2桁が透過度
+scales::show_col(ggsci::pal_jama()(4))
+```
+<img src="https://user-images.githubusercontent.com/7193590/198450810-e8e89d30-4d4e-479b-bc50-65eb3d8b25dd.png" width="50%" />
+
 
 # 軸とかのラベルを変える
 ```R
@@ -96,6 +103,38 @@ p.bar1 +
                  width = 0.2)
 ```
 <img src="https://user-images.githubusercontent.com/7193590/194460857-b0ce92dd-e736-45cc-9199-775a8721b4b9.png" width="50%" />
+
+## 色を変える
+```R
+p.bar1 + ggsci::scale_fill_jama()
+```
+<img src="https://user-images.githubusercontent.com/7193590/198453508-2e51bd62-e977-4dc4-a28e-0d1da4b95d33.png" width="50%" />
+
+
+# Facet / patchwork関連
+```R
+penguins %>% 
+    ggplot(aes(x = bill_length_mm,
+               y = bill_depth_mm)) +
+    geom_point() +
+    facet_wrap(~ species)
+```
+<img src="https://user-images.githubusercontent.com/7193590/198456922-c26e3391-c88b-4943-9ee6-af9ca5cd96bd.png" width="50%" />
+
+
+## Facetのタイトルを変更する
+```R
+penguins %>% 
+    ggplot(aes(x = bill_length_mm,
+               y = bill_depth_mm)) +
+    geom_point() +
+    facet_wrap(~ species,
+               labeller = as_labeller(c(Adelie = 'アデリー',
+                                        Chinstrap = 'ヒゲ',
+                                        Gentoo = 'ジェンツー')))
+```
+<img src="https://user-images.githubusercontent.com/7193590/198459753-8653a6a9-6c36-411b-8517-12973cdf0073.png" width="50%" />
+
 
 # 保存関連
 - single column size: `width`: 3.5 inch
